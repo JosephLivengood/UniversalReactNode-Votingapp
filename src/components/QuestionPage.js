@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import NotFoundPage from './NotFoundPage';
-import QuestionMenu from './QuestionMenu';
 import questions from '../data/questions';
 
 export default class QuestionPage extends React.Component {
@@ -15,7 +14,7 @@ export default class QuestionPage extends React.Component {
     return (
       <div className="question-full">
         <QuestionMenu/>
-        <div className="athlete">
+        <div className="question">
           <header style={headerStyle}/>
         <h2 className="question">{questions.question}</h2>
           <section className="responses">
